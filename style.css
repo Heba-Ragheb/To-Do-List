@@ -41,23 +41,33 @@
 }.task-list button{
     border-radius: 10px;
     height: 35px;
-    background-color: black;
+    background-color: initial;
     color: white;
     text-decoration: none;
     border: 1px solid white;
     margin-top: 10px;
-}.task-list input{
-   
-    width: 280px;
+}.task-list input[type="text"]{
+    position: relative;
+    width: 240px;
     height: 30px;
     border-radius: 10px;
-    background-color: black;
+    background-color: initial;
     text-decoration: none;
     border: 1px solid white;
     color: azure;
     margin-top: 10px;
+    text-align: start;
+    text-indent: 25px;
+    
+}.task-list{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+}
 
-} .head button{
+ .head button{
     border-radius: 10px;
     height: 35px;
     background-color: black;
@@ -73,4 +83,13 @@
     }
     button:hover{
         background-color: rgb(70, 64, 63);
-    }
+    } 
+   /** input[type="checkbox"]{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 5px;
+        
+        z-index: 2;
+        
+          }
